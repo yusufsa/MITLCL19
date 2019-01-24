@@ -41,11 +41,11 @@ layout: default
 
         <h2 class="text-center">Weekly Stuff</h2>
         <div class="list-group">
-            <a href="{{ site.baseurl }}/weeks/1-introduction" class="list-group-item front-page-list-item">Feb 8 &mdash; Introduction</a>
-            <a href="{{ site.baseurl }}/weeks/2-projects" class="list-group-item front-page-list-item">Feb 15 &mdash; Projects</a>
-            <a href="{{ site.baseurl }}/weeks/3-passion" class="list-group-item front-page-list-item">Feb 22 &mdash; Passion</a>
-            <a href="{{ site.baseurl }}/weeks/4-peers" class="list-group-item front-page-list-item">Mar 1 &mdash; Peers</a>
-            <a href="{{ site.baseurl }}/weeks/5-play" class="list-group-item front-page-list-item">Mar 8 &mdash; Play</a>
+            <a href="{{ site.baseurl }}/weeks/1-introduction" class="list-group-item front-page-list-item">Feb 6 &mdash; Introduction</a>
+            <a href="{{ site.baseurl }}/weeks/2-projects" class="list-group-item front-page-list-item">Feb 13 &mdash; Projects</a>
+            <a href="{{ site.baseurl }}/weeks/3-passion" class="list-group-item front-page-list-item">Feb 20 &mdash; Passion</a>
+            <a href="{{ site.baseurl }}/weeks/4-peers" class="list-group-item front-page-list-item">Mar 6 &mdash; Peers</a>
+            <a href="{{ site.baseurl }}/weeks/5-play" class="list-group-item front-page-list-item">Mar 13 &mdash; Play</a>
             <a href="{{ site.baseurl }}/weeks/6-creative-society" class="list-group-item front-page-list-item">Mar 15 &mdash; Creative Society</a>
         </div>
     </div>
