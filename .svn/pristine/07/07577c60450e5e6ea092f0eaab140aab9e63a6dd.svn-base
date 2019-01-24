@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+
+    {% include navbar.html %}
+
+    <div id="background-pegs">
+      <img class="background-peg" src="{{ site.baseurl }}/assets/img/peg_red.svg" />
+    </div>
+
+    <div class="container-fluid"">
+      {{ content }}
+
+      {% include footer.html %}
+    </div>
+
+    
+
+  <!-- Bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $.get("{{ page.googleDocUrl }}", function(html) {
+
+      var contents = $('#google-doc-iframe').contents();
+      contents.find('html').html(html);
+      contents.find('a[href^="http://"]').attr("target", "_blank");
+      contents.find('a[href^="https://"]').attr("target", "_blank");
+    });
+  </script>
+  <script type="text/javascript">
+    ;(function() {
+      var seed = Math.floor(Math.random() * 10000);
+
+      function randomFromSeed() {
+          var x = Math.sin(seed++) * 10000;
+          return Math.floor((x - Math.floor(x)) * 10000);
+      }
+
+      function generateBackgroundPegs() {
+        var rows = 60;
+        var columns = 60;
+
+        // Set the grid rows and columns
+        var gridContainer = $('#background-pegs');
+
+        const backgroundPegsRatio = 0.18;
+
+        // Generate pegs
+        for (var j = 0; j < rows; ++j) {
+          for (var i = 0; i < columns; ++i) {
+
+            var shouldDrawPeg = Math.random() < backgroundPegsRatio;
+            if (!shouldDrawPeg) {
+              continue;
+            }
+
+            var colorVal = randomFromSeed() % 4;
+            switch (colorVal) {
+              case 0:
+                gridContainer.append('<img style="top:' + (j * 49) + 'px; left:' + (i * 49) + 'px;" class="background-peg" src="../assets/img/peg_green.svg" />');
+                break;
+              case 1:
+                gridContainer.append('<img style="top:' + (j * 49) + 'px; left:' + (i * 49) + 'px;" class="background-peg" src="../assets/img/peg_blue.svg" />');
+                break;
+              case 2:
+                gridContainer.append('<img style="top:' + (j * 49) + 'px; left:' + (i * 49) + 'px;" class="background-peg" src="../assets/img/peg_red.svg" />');
+                break;
+              case 3:
+                gridContainer.append('<img style="top:' + (j * 49) + 'px; left:' + (i * 49) + 'px;" class="background-peg" src="../assets/img/peg_yellow.svg" />');
+                break;
+            }
+          }
+        }
+
+      }
+
+      $(document).ready(generateBackgroundPegs);
+    })();
+  </script>
+  </body>
+
+</html>
