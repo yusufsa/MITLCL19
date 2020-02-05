@@ -1,7 +1,7 @@
 # MAS.712 - Learning Creative Learning
-## Spring 2018
+## Spring 2019
 
-This is the website used for the spring 2018 version of MAS.712 - Learning Creative Learning.
+This is the website used for the spring 2019 version of MAS.712 - Learning Creative Learning and is based largely on the 2018 version of the course. For 2019, opted not to change the name of the repo. You're welcome to do this in the future. 
 
 If you're a person from the future who wants to use/update this site: (a) greetings from the past! and (b) here are some notes that may or may not be helpful:
 
@@ -29,3 +29,11 @@ If, you future person, want to reuse the shell of this site, but update the cont
 - Replace the embed codes in the new repository with the embed codes from each respective Google Doc
 - Deploy your new site somewhere where students can access it
 - Go learn yourself some creative learning!
+
+### Aditional Notes
+
+A couple challenges you might encounter that may take some troubleshooting if you're new to Jekyll or aws: 
+
+- For aws, be sure to install the aws cl and access keys. You can find documentation to help you install aws cl on mac [here](https://docs.aws.amazon.com/cli/latest/userguide/install-macos.html) and documentation on getting your aws access keys [here](https://docs.aws.amazon.com/general/latest/gr/aws-sec-cred-types.html). You'll need to speak with Colby (or whoever manages our aws) in the future. 
+- If you're not on the Media Lab's github yet, join here: https://ml-github.media.mit.edu/. This will allow you to push to LLK repos (including this one). 
+- if you have issues running jekyll, try preprending commands with bundle exec. 
