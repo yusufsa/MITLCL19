@@ -1,4 +1,9 @@
 # MAS.712 - Learning Creative Learning
+
+## Spring 2020
+
+The Spring 2020 site redirects to [this google doc](https://docs.google.com/document/d/1ZLJ_Jr5bd6HmyCU9myaZBsOI4MIjbAJx5l40L4ZGPCs/edit). We created an index.html file to that and renamed the old index to index2019.md. If you'd like to return the site to its previous glory (and leave the microworld that is your google doc?), just delete (or rename) the index.html file and rename the index2019.md file to index.md and you should be all set. 
+
 ## Spring 2019
 
 This is the website used for the spring 2019 version of MAS.712 - Learning Creative Learning and is based largely on the 2018 version of the course. For 2019, opted not to change the name of the repo. You're welcome to do this in the future. 

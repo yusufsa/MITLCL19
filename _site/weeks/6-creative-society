@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Introduction</title>
+  <title>Creative Society</title>
   <meta name="author" content="">
   <meta name="description" content="">
 
@@ -21,7 +21,7 @@
   
   <!-- Custom styles -->
   <link rel="stylesheet" href="/assets/css/mas712.css">
-  <link rel="canonical" href="http://localhost:4000/weeks/1-introduction.html">
+  <link rel="canonical" href="https://yusuf989.github.io/MITLCL19//weeks/6-creative-society.html">
   <link rel="alternate" type="application/rss+xml" title="MAS.712 - Learning Creative Learning" href="/feed.xml">
 
   <!-- JQuery -->
@@ -70,7 +70,7 @@
           <div class="jumbotron week-jumbotron d-none d-sm-block">
             <h2 class="text-center">
               <img class="jumbotron-peg" src="/assets/img/peg_blue.svg" />
-              Introduction
+              Creative Society
               <img class="jumbotron-peg" src="/assets/img/peg_blue.svg" />
             </h2>
           </div>
@@ -91,7 +91,7 @@
                 <div class="sk-circle12 sk-circle"></div>
               </div>
             </div>
-            <iframe id="google-doc-iframe" class="google-doc-content" height="500" scrolling="no" srcdoc=""></iframe>
+            <iframe id="google-doc-iframe" class="google-doc-content" height="600" scrolling="no" srcdoc=""></iframe>
           </div>
         </div>
       </div>
@@ -191,7 +191,7 @@
     })();
   </script>
   <script type="text/javascript">
-    $.get("https://docs.google.com/document/d/e/2PACX-1vSgHBOJ9bK22yOD3bbKZS3vHiyle1DJyBgUgCokIrInmsJ1uyUOcqSeKOmKuE3-344nJn-xAZYzEipb/pub?embedded=true", function(html) {
+    $.get("https://docs.google.com/document/d/e/2PACX-1vSzidCFOP3bh0mcq0THSw8bo0PLsczjxNtjYBC_pxvHqoT-G8hh9vgYdBWDEa2b-wpqYfXWEzEtsVjF/pub?embedded=true", function(html) {
 
       var contents = $('#google-doc-iframe').contents();
       contents.find('html').html(html);

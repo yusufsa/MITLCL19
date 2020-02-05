@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Peers</title>
+  <title>Projects</title>
   <meta name="author" content="">
   <meta name="description" content="">
 
@@ -21,7 +21,7 @@
   
   <!-- Custom styles -->
   <link rel="stylesheet" href="/assets/css/mas712.css">
-  <link rel="canonical" href="http://localhost:4000/weeks/4-peers.html">
+  <link rel="canonical" href="https://yusuf989.github.io/MITLCL19//weeks/2-projects.html">
   <link rel="alternate" type="application/rss+xml" title="MAS.712 - Learning Creative Learning" href="/feed.xml">
 
   <!-- JQuery -->
@@ -70,7 +70,7 @@
           <div class="jumbotron week-jumbotron d-none d-sm-block">
             <h2 class="text-center">
               <img class="jumbotron-peg" src="/assets/img/peg_blue.svg" />
-              Peers
+              Projects
               <img class="jumbotron-peg" src="/assets/img/peg_blue.svg" />
             </h2>
           </div>
@@ -191,7 +191,7 @@
     })();
   </script>
   <script type="text/javascript">
-    $.get("https://docs.google.com/document/d/e/2PACX-1vSfObt39F-lI3j68DvOV2B8gmgvl0Pvtrx5O1q0yHlcAemPI5ltcUY9x5VyAGa-wcoZ-AO-jljeSuyn/pub?embedded=true", function(html) {
+    $.get("https://docs.google.com/document/d/e/2PACX-1vR6-dS9xNzTbngPLXmmns-vTpDEK-EeCTXOv6ADD5ekwhCX1Hq6JbQDruN5Ar7e5jDiaDxoS0TomcxF/pub?embedded=true", function(html) {
 
       var contents = $('#google-doc-iframe').contents();
       contents.find('html').html(html);

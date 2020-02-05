@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>MAS.712 - Learning Creative Learning</title>
+  <title>Introduction</title>
   <meta name="author" content="">
-  <meta name="description" content="The website for the spring 2018 edition of MAS.712 - Learning Creative Learning offered at the MIT Media Lab.">
+  <meta name="description" content="">
 
   <link rel="icon" href="/assets/img/favicon.ico">
   
@@ -21,7 +21,7 @@
   
   <!-- Custom styles -->
   <link rel="stylesheet" href="/assets/css/mas712.css">
-  <link rel="canonical" href="http://localhost:4000/404.html">
+  <link rel="canonical" href="https://yusuf989.github.io/MITLCL19//weeks/1-introduction.html">
   <link rel="alternate" type="application/rss+xml" title="MAS.712 - Learning Creative Learning" href="/feed.xml">
 
   <!-- JQuery -->
@@ -61,16 +61,37 @@
 </nav>
 
     <div id="background-pegs">
+      <img class="background-peg" src="/assets/img/peg_red.svg" />
     </div>
 
-    <div class="container-fluid"">
-
-      <div class="error-404-row row justify-content-center">
-        <div class="col-8 text-center error-404-content">
-          <h1>404!</h1>
-          <h2>Oh no, the fifth P: Perplexion!</h2>
-          <div class="error-404-text">
-            Looks like you found a page that doesn't exist.
+    <div class="container-fluid">
+      <div class="row justify-content-center page-content">
+        <div class="col-12 col-md-10 col-lg-8">
+          <div class="jumbotron week-jumbotron d-none d-sm-block">
+            <h2 class="text-center">
+              <img class="jumbotron-peg" src="/assets/img/peg_blue.svg" />
+              Introduction
+              <img class="jumbotron-peg" src="/assets/img/peg_blue.svg" />
+            </h2>
+          </div>
+          <div class="google-doc-container">
+            <div class="loading-circle">
+              <div class="sk-fading-circle">
+                <div class="sk-circle1 sk-circle"></div>
+                <div class="sk-circle2 sk-circle"></div>
+                <div class="sk-circle3 sk-circle"></div>
+                <div class="sk-circle4 sk-circle"></div>
+                <div class="sk-circle5 sk-circle"></div>
+                <div class="sk-circle6 sk-circle"></div>
+                <div class="sk-circle7 sk-circle"></div>
+                <div class="sk-circle8 sk-circle"></div>
+                <div class="sk-circle9 sk-circle"></div>
+                <div class="sk-circle10 sk-circle"></div>
+                <div class="sk-circle11 sk-circle"></div>
+                <div class="sk-circle12 sk-circle"></div>
+              </div>
+            </div>
+            <iframe id="google-doc-iframe" class="google-doc-content" height="500" scrolling="no" srcdoc=""></iframe>
           </div>
         </div>
       </div>
@@ -168,6 +189,17 @@
 
       $(document).ready(generateBackgroundPegs);
     })();
+  </script>
+  <script type="text/javascript">
+    $.get("https://docs.google.com/document/d/e/2PACX-1vSgHBOJ9bK22yOD3bbKZS3vHiyle1DJyBgUgCokIrInmsJ1uyUOcqSeKOmKuE3-344nJn-xAZYzEipb/pub?embedded=true", function(html) {
+
+      var contents = $('#google-doc-iframe').contents();
+      contents.find('html').html(html);
+      contents.find('a[href^="http://"]').attr("target", "_blank");
+      contents.find('a[href^="https://"]').attr("target", "_blank");
+
+      $('.loading-circle').addClass('hidden');
+    });
   </script>
   </body>
 
